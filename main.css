@@ -146,3 +146,52 @@ footer a {
   text-decoration: none;
   color: var(--heading-text);
 }
+
+/* Media Query for larger screen */
+
+@media (min-width: 900px) {
+  /* logo */
+  .logo {
+    max-width: 100px;
+  }
+
+  /* nav */
+  header {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    padding: 1em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+
+  .nav-bar {
+    flex: 1;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2em;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  main {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  aside {
+    flex: 1;
+  }
+}
