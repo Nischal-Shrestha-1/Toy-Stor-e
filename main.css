@@ -105,6 +105,28 @@ img {
   gap: 1em;
 }
 
+.feature-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: whitesmoke;
+  color: black;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+.feature-card h4 {
+  margin-bottom: 5px;
+}
+
+.feature-card p {
+  margin: 0;
+}
+
 .btn-primary {
   padding: 10px 15px;
   cursor: pointer;
@@ -193,5 +215,13 @@ footer a {
 
   aside {
     flex: 1;
+  }
+
+  .feature-card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .feature-card {
+    padding: 25px 10px;
   }
 }
