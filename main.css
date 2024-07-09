@@ -98,11 +98,16 @@ img {
 }
 
 .container {
-  min-height: 100%;
+  min-height: 90%;
   padding: 1em;
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+.container-fluid {
+  min-height: 90%;
+  padding: 1em;
 }
 
 .feature-card-container {
@@ -138,6 +143,8 @@ img {
   background-color: gainsboro;
   border: none;
   border-radius: 5px;
+  text-decoration: none;
+  color: black;
 }
 
 aside {
@@ -172,6 +179,11 @@ footer a {
   font-weight: bold;
   text-decoration: none;
   color: var(--heading-text);
+}
+
+/* miscellaneous */
+.hr-primary {
+  border-color: var(--primary);
 }
 
 /* Media Query for larger screen */
