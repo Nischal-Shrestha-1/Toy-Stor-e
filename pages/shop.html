@@ -8,6 +8,16 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Keyword For SEO -->
+    <meta
+      name="description"
+      content="Shop for Toy Story-themed toys and merchandise."
+    />
+    <meta
+      name="keywords"
+      content="Toy Story, buy Toy Story toys, Toy Story shopping, Toy Storage Space, Toy Story Action Figures, Toy Story Dolls, Tou Story Dollhouse, Plushie, Toy Constructor, Games & Puzzles, Baby Shop, Riding Toys, Buzz Lightyear toys, Woody toys, Toy Story gifts"
+    />
+    <!-- Keyword For SEO End -->
     <title>Toy Stor-E | Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,13 +26,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/styles/shop.css" />
     <script
       src="https://kit.fontawesome.com/b658fdd2c8.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <!-- header -->
+    <!-- header start -->
     <header>
       <img class="logo" src="/images/logo-white.png" alt="logo" />
       <nav class="nav-bar">
@@ -34,17 +45,74 @@
         </ul>
       </nav>
     </header>
-    <!-- content -->
+    <!-- header end -->
+    <!-- content start -->
     <div class="container-fluid">
-      <h2>Collections</h2>
+      <div class="collection-header">
+        <h2>Collections</h2>
+        <input type="text" class="search-input" placeholder="Search..." />
+      </div>
       <hr class="hr-primary" />
+      <br />
+      <div class="collection-container">
+        <div class="collection-card">
+          <div class="collection-img">
+            <img src="/images/collections/Storage.jpg" alt="storage" />
+          </div>
+          <h2>STORAGE</h2>
+          <p>18 Products</p>
+        </div>
+        <div class="collection-card">
+          <div class="collection-img">
+            <img
+              src="/images/collections/Action Figures.jpg"
+              alt="action_figures"
+            />
+          </div>
+          <h2>ACTION FIGURES</h2>
+          <p>7 Products</p>
+        </div>
+        <div class="collection-card">
+          <div class="collection-img">
+            <img src="/images/collections/Dolls.jpg" alt="dolls_dollhouses" />
+          </div>
+          <h2>DOLLS & DOLLHOUSES</h2>
+          <p>9 Products</p>
+        </div>
+        <div class="collection-card">
+          <div class="collection-img">
+            <img
+              src="/images/collections/Constructors.jpg"
+              alt="constructors"
+            />
+          </div>
+          <h2>CONSTRUCTORS</h2>
+          <p>15 Products</p>
+        </div>
+        <div class="collection-card">
+          <div class="collection-img">
+            <img src="/images/collections/Plushies.jpg" alt="plushies" />
+          </div>
+          <h2>PLUSHIES</h2>
+          <p>19 Products</p>
+        </div>
+        <div class="collection-card">
+          <div class="collection-img">
+            <img src="/images/collections/Riding Toys.jpg" alt="riding_toys" />
+          </div>
+          <h2>RIDING TOYS</h2>
+          <p>4 Products</p>
+        </div>
+      </div>
     </div>
-    <!-- footer -->
+    <!-- content end -->
+    <!-- footer start -->
     <footer>
       <p>
         &copy; Copyright 2021
         <a href="mailto:nischalshrestha@toystore.com">Toy Stor-e </a>
       </p>
     </footer>
+    <!-- footer end -->
   </body>
 </html>
