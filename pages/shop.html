@@ -48,60 +48,111 @@
     <!-- header end -->
     <!-- content start -->
     <div class="container-fluid">
-      <div class="collection-header">
-        <h2>Collections</h2>
-        <input type="text" class="search-input" placeholder="Search..." />
+      <div class="filter-box-small">
+        <button class="btn-primary">
+          <i class="fa-solid fa-filter"></i>
+          <span>Filter and sort</span>&nbsp;
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
       </div>
-      <hr class="hr-primary" />
-      <br />
-      <div class="collection-container">
-        <div class="collection-card">
-          <div class="collection-img">
-            <img src="/images/collections/Storage.jpg" alt="storage" />
-          </div>
-          <h2>STORAGE</h2>
-          <p>18 Products</p>
+      <div class="filter-box-large">
+        <div class="collection-header">
+          <h2>Availability</h2>
         </div>
-        <div class="collection-card">
-          <div class="collection-img">
-            <img
-              src="/images/collections/Action Figures.jpg"
-              alt="action_figures"
-            />
+        <hr class="hr-primary" />
+        <div class="filter-container">
+          <div>
+            <input type="checkbox" name="availability" id="inStock" />
+            <label for="inStock">In stock</label>
           </div>
-          <h2>ACTION FIGURES</h2>
-          <p>7 Products</p>
+          <div>
+            <input type="checkbox" name="availability" id="outOfStock" />
+            <label for="outOfStock">Out of stock</label>
+          </div>
         </div>
-        <div class="collection-card">
-          <div class="collection-img">
-            <img src="/images/collections/Dolls.jpg" alt="dolls_dollhouses" />
-          </div>
-          <h2>DOLLS & DOLLHOUSES</h2>
-          <p>9 Products</p>
+        <br />
+        <div class="collection-header">
+          <h2>Price</h2>
         </div>
-        <div class="collection-card">
-          <div class="collection-img">
-            <img
-              src="/images/collections/Constructors.jpg"
-              alt="constructors"
-            />
+        <hr class="hr-primary" />
+        <div class="filter-container">
+          <div>
+            <input type="checkbox" name="availability" id="firstPrice" />
+            <label for="firstPrice">0$ - 10$</label>
           </div>
-          <h2>CONSTRUCTORS</h2>
-          <p>15 Products</p>
+          <div>
+            <input type="checkbox" name="availability" id="secondPrice" />
+            <label for="secondPrice">10$ - 50$</label>
+          </div>
+          <div>
+            <input type="checkbox" name="availability" id="thirdPrice" />
+            <label for="thirdPrice">50$ - 70$</label>
+          </div>
+          <div>
+            <input type="checkbox" name="availability" id="fourthPrice" />
+            <label for="fourthPrice">70$ - 100$</label>
+          </div>
         </div>
-        <div class="collection-card">
-          <div class="collection-img">
-            <img src="/images/collections/Plushies.jpg" alt="plushies" />
-          </div>
-          <h2>PLUSHIES</h2>
-          <p>19 Products</p>
+      </div>
+      <div class="grid-box">
+        <div class="collection-header">
+          <h2>Collections</h2>
+          <input type="text" class="search-input" placeholder="Search..." />
         </div>
-        <div class="collection-card">
-          <div class="collection-img">
-            <img src="/images/collections/Riding Toys.jpg" alt="riding_toys" />
+        <hr class="hr-primary" />
+        <br />
+        <div class="collection-container">
+          <div class="collection-card">
+            <div class="collection-img">
+              <img src="/images/collections/Storage.jpg" alt="storage" />
+            </div>
+            <h2>STORAGE</h2>
+            <p>18 Products</p>
           </div>
-          <h2>RIDING TOYS</h2>
-          <p>4 Products</p>
+          <div class="collection-card">
+            <div class="collection-img">
+              <img
+                src="/images/collections/Action Figures.jpg"
+                alt="action_figures"
+              />
+            </div>
+            <h2>ACTION FIGURES</h2>
+            <p>7 Products</p>
+          </div>
+          <div class="collection-card">
+            <div class="collection-img">
+              <img src="/images/collections/Dolls.jpg" alt="dolls_dollhouses" />
+            </div>
+            <h2>DOLLS & DOLLHOUSES</h2>
+            <p>9 Products</p>
+          </div>
+          <div class="collection-card">
+            <div class="collection-img">
+              <img
+                src="/images/collections/Constructors.jpg"
+                alt="constructors"
+              />
+            </div>
+            <h2>CONSTRUCTORS</h2>
+            <p>15 Products</p>
+          </div>
+          <div class="collection-card">
+            <div class="collection-img">
+              <img src="/images/collections/Plushies.jpg" alt="plushies" />
+            </div>
+            <h2>PLUSHIES</h2>
+            <p>19 Products</p>
+          </div>
+          <div class="collection-card">
+            <div class="collection-img">
+              <img
+                src="/images/collections/Riding Toys.jpg"
+                alt="riding_toys"
+              />
+            </div>
+            <h2>RIDING TOYS</h2>
+            <p>4 Products</p>
+          </div>
         </div>
       </div>
     </div>
