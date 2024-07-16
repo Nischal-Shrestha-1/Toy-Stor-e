@@ -1,0 +1,123 @@
+.about-container {
+  padding: 2em;
+}
+
+.about-container h1 {
+  text-align: center;
+}
+
+/* rotating cube */
+.cube-main {
+  position: relative;
+  min-height: 400px;
+}
+
+.cube {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  perspective: 1500px;
+}
+
+.box-container {
+  position: relative;
+  transform-style: preserve-3d;
+  animation-name: rotate;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.box {
+  position: fixed;
+  width: 240px;
+  height: 240px;
+  border: 2px solid #26262600;
+}
+
+#box-front {
+  transform: translateX(-120px) translateY(-120px) translateZ(120px);
+  background: rgba(255, 16, 108, 0);
+}
+
+#box-back {
+  transform: translateX(-120px) translateY(-120px) translateZ(-120px)
+    rotateY(180deg);
+  background: rgba(1, 251, 234, 0);
+}
+
+#box-right {
+  transform: translateY(-120px) rotateY(90deg);
+  background: rgba(4, 255, 117, 0);
+}
+
+#box-left {
+  transform: translateY(-120px) translateX(-240px) rotateY(270deg);
+  background: rgba(217, 255, 0, 0);
+}
+
+#box-top {
+  transform: translateX(-120px) translateY(-240px) rotateX(90deg);
+  background: rgba(0, 4, 246, 0);
+}
+
+#box-bottom {
+  transform: translateX(-120px) rotateX(90deg);
+  background: rgba(255, 196, 0, 0.237);
+  border-radius: 2px;
+  box-shadow: 0 20px 30px rgb(234, 212, 126);
+  filter: blur(100px);
+  border: 1px solid #d5c30000;
+}
+
+.box-area {
+  transform: rotateX(90deg) rotateY(90deg);
+}
+
+.button {
+  text-decoration: none;
+  color: #c5c3bb;
+  background: rgba(244, 191, 1, 0.272);
+  padding: 128px 78px 100px;
+  border-radius: 2px;
+  border: 3px solid #ffffff;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.glow-button:hover {
+  background-color: #ede3bd;
+  color: rgb(47, 45, 45);
+  box-shadow: 0 20px 30px rgba(252, 243, 207, 0.6);
+}
+
+.box i {
+  font-size: 95px;
+}
+
+/* animation */
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+.content {
+  padding: 0em 0.5em;
+}
+
+.content p {
+  text-align: justify;
+}
+
+/* Media Query for larger screen */
+
+@media (min-width: 900px) {
+  .content {
+    padding: 0em 5em;
+  }
+}
