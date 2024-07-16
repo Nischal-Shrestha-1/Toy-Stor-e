@@ -26,13 +26,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
     <script
       src="https://kit.fontawesome.com/b658fdd2c8.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <!-- header -->
+    <!-- header start -->
     <header>
       <img class="logo" src="/images/logo-white.png" alt="logo" />
       <nav class="nav-bar">
@@ -44,5 +45,42 @@
         </ul>
       </nav>
     </header>
+    <!-- header end -->
+    <!-- content start -->
+    <section class="contact-form">
+      <h1>Have any questions? Contact Us!</h1>
+      <form class="form-main" method="get">
+        <label for="fname">
+          <span class="input-name"> Name <sup>*</sup></span>
+          <input type="text" name="fname" id="fname" class="name" required />
+        </label>
+        <label for="email">
+          <span class="input-name"> Email address <sup>*</sup></span>
+          <input type="email" name="email" id="email" class="email" required />
+        </label>
+        <label for="phone">
+          <span class="input-name"> Phone Number </span>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            class="phone"
+            pattern="[0-9]{10}"
+            title="Must have 10 digits and cannot contain negative value."
+          />
+        </label>
+        <label for="message">
+          <span class="input-name">Message</span>
+          <textarea
+            name="message"
+            id="message"
+            class="message"
+            rows="3"
+          ></textarea>
+        </label>
+        <button class="btn send-btn" type="submit">Send</button>
+      </form>
+    </section>
+    <!-- content end -->
   </body>
 </html>

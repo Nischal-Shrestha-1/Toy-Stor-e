@@ -1,0 +1,78 @@
+/* form */
+.contact-form {
+  padding: 2em 0em;
+}
+
+.contact-form h1 {
+  text-align: center;
+  background: linear-gradient(75deg, var(--primary), var(--tertiary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-main {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  border: 1px solid var(--secondary);
+  border-radius: 1rem;
+  background: #252525;
+  max-width: 375px;
+  width: 80%;
+}
+
+.form-main label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #ccc;
+}
+
+.form-main label input,
+.form-main label textarea {
+  background: #202020;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  color: #e5e5e5;
+  border: 1px solid transparent;
+  transition: all 0.25s ease 0s;
+}
+
+.form-main label textarea {
+  max-width: 100%;
+  max-height: 200px;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.input-name sup {
+  color: red;
+}
+
+.form-main label input:hover,
+label textarea:hover,
+.form-main label input:focus,
+.form-main label textarea:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px var(--secondary);
+}
+
+/* button */
+.send-btn {
+  background: linear-gradient(90deg, var(--secondary) 0%, #170055 100%);
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ccc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+.send-btn:hover,
+.send-btn:focus {
+  background: linear-gradient(90deg, var(--secondary) 75%, #170055 100%);
+}
