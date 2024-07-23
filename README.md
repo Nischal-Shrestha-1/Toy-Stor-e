@@ -15,6 +15,7 @@ Contributors: Nischal Shrestha
 2. Used media queries and flexible layouts to ensure your site is usable on various devices with mobile first approach.
 3. All form controls have associated 'label' elements.
 4. Use of relative units like em, rem for font sizes to support user preferences.
+5. Added 'lang' attribute.
 ---------------------------------------------------------------------------
 == Search Engine Optimization Stratergies == 
 
