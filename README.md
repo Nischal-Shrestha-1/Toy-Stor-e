@@ -11,8 +11,10 @@ Contributors: Nischal Shrestha
 ---------------------------------------------------------------------------
 == Accessibility Stratergy ==
 
-For this project I have used alt text that is informative for images so that people with visible disabilty can understand.
-It can also come in handy if the image is broken.
+1. For this project I have used alt text that is informative for images so that people with visible disabilty can understand. It can also come in handy if the image is broken.
+2. Used media queries and flexible layouts to ensure your site is usable on various devices with mobile first approach.
+3. All form controls have associated 'label' elements.
+4. Use of relative units like em, rem for font sizes to support user preferences.
 ---------------------------------------------------------------------------
 == Search Engine Optimization Stratergies == 
 
